@@ -1,9 +1,9 @@
 package com.saayi.zoozoo.usecases
 
-import com.saayi.zoozoo.models.Post
-import com.saayi.zoozoo.repository.PostRepository
+import com.saayi.common.models.Post
+import com.saayi.data.repository.PostsRepository
 import javax.inject.Inject
 
-class GetPostsUseCase @Inject constructor(private val repository: PostRepository) {
+class GetPostsUseCase @Inject constructor(private val repository: PostsRepository) {
     suspend operator fun invoke(): List<Post> = repository.getPosts()
 }

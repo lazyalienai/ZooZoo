@@ -21,3 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "ZooZoo"
 include(":app")
+include(":sdui")
+include(":network")
+include(":data")
+include(":common")
+include(":player")
